@@ -1,0 +1,88 @@
+* {
+    font-family: 'Trebuchet MS';
+    background-color: lavenderblush;
+    text-align: center;
+}
+
+#intro {
+    color: palevioletred;
+    text-align: center;
+    margin: 50px;
+    font-size: 80px;
+  }
+  
+h2 {
+    font: italics;
+    font-size:x-large;
+    font-weight: 800;
+    color: grey;
+    transition: transform 0.5s 0.25s ease; 
+    background: white;
+    background-clip: border-box;
+    border: 3px white;
+    padding: 20px;
+  }
+
+h2:hover {
+    color: black;
+  }
+
+.project_section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+h3 {
+    font-size:x-large;
+    font-weight: 800;
+    color: black;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.project {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "A"
+        "B"
+        "C"
+}
+
+.project_title {
+    color: palevioletred; 
+    font-size: x-large;
+    grid-area: A;
+    margin-bottom: 1rem;
+}
+
+.project_description {
+    color: dimgray;
+    font-size: large;
+    grid-area: B;
+}
+
+.project_image {
+    grid-area: C;
+    max-height: 100%;
+    max-width: 25%;
+    align-self: center;
+    margin: 21px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+

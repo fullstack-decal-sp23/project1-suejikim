@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <head>
+            <title>Sueji Kim's Website</title>
+            <author></author>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <header>
+            <h5>Number of subscribers: 0</h5>
+            <h6>Become a subscriber in the bottom of this page!</h6>
+        </header>
+        
+        <h1 id="intro">Hey there! I'm Sueji Kim</h1>
+    </head>
+    <body>
+        <h2>ABOUT ME</h2>
+        <div style="display: flex; flex-direction: column;">
+            <h3>Data Science + Psychology + Computer Science @ UC Berkeley</h3>
+        <p>Undergraduate student at UC Berkeley pursuing a double major in Data Science and Psychology with a minor in Computer Science</p>
+
+        <h3>Tech Skills</h3>
+        <p>Java, Python, Scheme, Google Workspace, R Studio</p>
+        <br>
+        <br>
+
+        <h2>EXPLORE MY WORK</h2>
+        <br>
+        <div class="project_section">
+            <div class="project">
+                <div class="project_title">Midnight: A Video Game in Scratch</div>
+                <div class="project_description">Created a sandbox survival video game using pixel art and Scratch. The game is interactable with the user and focuses on collecting items for survival.</div>
+            </div>
+            <div class="project">
+                <div class="project_title">Build Your Own World: A Collaborative Class Project</div>
+                <div class="project_description">Worked with a teammate to implement an open-world game in Java with a variety of data structures and algorithm design.</div>
+            </div>
+
+        </div>
+
+        <h2>LET'S CONNECT!</h2>
+        <h4>Send me an email or a message through LinkedIn</h4>
+        <p>
+            <a href="mailto:sueji.kim@berkeley.edu"> <img width="40" height="40" src="emailcorrect.png"></a>  
+            <a target="_blank" href="https://www.linkedin.com/in/sueji-kim-9a24bb255/"> <img width="40" height="40" src="linkedin.png"></a>  
+        </p> 
+        
+        <br>
+        <h4>Become a subscriber of this page!</h4>
+        <form>
+            <label for="name">Name:</label>
+            <input class="name_input" type="text" placeholder="Name">
+            <br>
+            <br>
+            <button type="submit" onclick="myFunc()">Submit</button>
+        </form>
+
+        <script>
+            const input = document.querySelector(".name_input")
+            myFunc = () => {
+                alert('Thank you for subscribing, ' + input.value + '!')
+           }
+        </script>
+        <br>
+    </body>
